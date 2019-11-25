@@ -1,0 +1,247 @@
+\documentclass[9pt]{beamer}
+%\usetheme[background=light]{metropolis}
+\usetheme{Warsaw}
+%\usefonttheme{professionalfonts}
+\usefonttheme{serif}
+\usepackage{fontspec}
+%\usefonttheme{structurebold}
+\usecolortheme{dove}
+\setmainfont{Georgia}
+
+\setbeamertemplate{headline}{%
+\leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=5.8ex,dp=2.125ex]{palette}%
+        \insertsectionnavigationhorizontal{\paperwidth}{}{\hskip0pt plus1filll}
+    \end{beamercolorbox}%
+  }
+}
+
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+
+\setbeamertemplate{section in head/foot}{%
+    \if\insertsectionheadnumber1
+        \tikz\node[draw=black,fill=black,shape=signal,text=white]{\insertsectionhead\hskip.3cm};
+    \else
+        \tikz\node[draw=black,fill=black,shape=signal,signal from=west, signal to=east,text=white]     {\insertsectionhead\hskip.3cm};
+  \fi
+}
+
+\setbeamertemplate{section in head/foot shaded}{%
+    \if\insertsectionheadnumber1
+        \tikz\node[draw=black,fill=white,shape=signal,text=black]{\insertsectionhead\hskip.3cm};
+    \else
+        \tikz\node[draw=black,fill=white,shape=signal,signal from=west, signal to=east,text=black]     {\insertsectionhead\hskip.3cm};
+  \fi
+}
+
+\setbeamerfont{section in head/foot}{size=\fontsize{4}{6}\selectfont}
+
+\title{Whirlpool}
+\subtitle{Data Acquisition using N-node Distributed Web Crawler}
+\author{Rihan Pereira, MSCS}
+\institute[California State University Channel Islands]
+{
+%  %\inst{1}%
+  \textit{Advisor:} Dr. Michael Soltys\\
+  Department of Computer Science \\
+  MSCS Graduate 2018-2019
+}
+
+\titlegraphic{\includegraphics[width=.3\textwidth,height=.2\textheight]{../csuci-mscs-thesis-dist-web-crawler/media/correctlogo.jpg}~}
+\date{\today}
+
+\begin{document}
+
+% real meat of the presentation
+% -------------------------------------
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+% table of contents a.k.a outline
+% -------------------------------------
+\begin{frame}[plain]
+  %\frametitle{Agenda}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section[Motiv. \& Contrib]{Motivation \& Contribution}
+\begin{frame}[plain]
+  \centering{Motivation \& Contribution}
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{Motivation}
+  \centering
+  \includegraphics[width=8cm, height=6cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/data_hierarchy.png}
+  \pause
+  \\
+  Self-actualization (AI) is great, but you first need food, water, and shelter (data literacy, collection, and infrastructure).”
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{Contributions}
+  to be completed
+\end{frame}
+
+% -------------------------------------
+
+\section[Crawler history]{Crawler characteristics \& history}
+\begin{frame}[plain]
+  \centering{Crawler characteristics \& history}
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{Crawl char \& hist.}
+  to add something
+\end{frame}
+
+% -------------------------------------
+
+\section[Mercator]{Mercator 1999(Heydon \& Najork)}
+\begin{frame}[plain]
+  \centering{Mercator 1999(Heydon \& Najork)}
+\end{frame}
+
+% -------------------------------------
+
+\subsection{Mercator background}
+\begin{frame}{Mercator background}
+  \centering
+  \includegraphics[width=10cm, height=6cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/basic-crawler-architecture-v2.png}
+\end{frame}
+
+% -------------------------------------
+
+\section[Soft. design]{Software Design Principles}
+\begin{frame}[plain]
+  \centering{Software Design Principles}
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{Soft. Design}
+  to add something
+\end{frame}
+
+% -------------------------------------
+
+\section[Event-driven]{Whirlpool: Event-driven architecture}
+\begin{frame}[plain]
+  \centering{Whirlpool: Event-driven architecture}
+\end{frame}
+
+% -------------------------------------
+
+\subsection{RabbitMQ: Message bus}
+\begin{frame}{RabbitMQ: Message bus}
+  \centering
+  \includegraphics[width=10cm, height=6cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/multi-container-deploy.png}
+\end{frame}
+
+% -------------------------------------
+
+\subsection{Direct Worker Queue Data Flow}
+\begin{frame}{Direct Worker Queue Data Flow}
+  \centering
+  \includegraphics[width=7cm, height=8cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/rmq-broker.png}
+\end{frame}
+
+% -------------------------------------
+
+\section[Parser]{Whirlpool: Parser}
+\begin{frame}[plain]
+  \centering{Whirlpool: Parser}
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{Parser}
+  to add something
+\end{frame}
+
+% -------------------------------------
+
+\section[Deduplication]{Whirlpool: Near-Deduplication}
+\begin{frame}[plain]
+  \centering{Whirlpool: Near-Deduplication}
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{Dedupe}
+  to add something
+\end{frame}
+
+% -------------------------------------
+
+\section[Dist. Crawling]{Whirlpool: Distributed Crawling}
+\begin{frame}[plain]
+  \centering{Whirlpool: Distributed Crawling}
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{Dist. crawl}
+  to add something
+\end{frame}
+
+% -------------------------------------
+
+\section[Opworks]{Whirlpool: Operations}
+\begin{frame}[plain]
+  \centering{Whirlpool: Operations}
+\end{frame}
+
+% -------------------------------------
+
+\subsection{From 10,000 ft.}
+\begin{frame}{From 10,000 ft.}
+ \centering
+ \includegraphics[width=10cm, height=8cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/ten-thousand-feet-aws.png} 
+\end{frame}
+
+% -------------------------------------
+
+\subsection{From 5,000 ft.}
+\begin{frame}{From 5,000 ft.}
+  \centering
+  \includegraphics[width=10cm, height=8cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/aws-deploy-5k-feet.png}
+\end{frame}
+
+% -------------------------------------
+
+\section[Future]{Future work}
+\begin{frame}[plain]
+  \centering{Future work}
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{future to do}
+  to add something
+\end{frame}
+
+% -------------------------------------
+
+%\section{Demo}
+%\begin{frame}{Demo}
+%  
+%\end{frame}
+
+% -------------------------------------
+
+\begin{frame}[plain]
+  \centering{Thank you! Questions ?}
+\end{frame}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

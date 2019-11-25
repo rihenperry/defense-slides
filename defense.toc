@@ -1,0 +1,15 @@
+\beamer@sectionintoc {1}{Motivation \& Contribution}{3}{0}{1}
+\beamer@sectionintoc {2}{Crawler characteristics \& history}{7}{0}{2}
+\beamer@sectionintoc {3}{Mercator 1999(Heydon \& Najork)}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{Mercator background}{10}{0}{3}
+\beamer@sectionintoc {4}{Software Design Principles}{11}{0}{4}
+\beamer@sectionintoc {5}{Whirlpool: Event-driven architecture}{13}{0}{5}
+\beamer@subsectionintoc {5}{1}{RabbitMQ: Message bus}{14}{0}{5}
+\beamer@subsectionintoc {5}{2}{Direct Worker Queue Data Flow}{15}{0}{5}
+\beamer@sectionintoc {6}{Whirlpool: Parser}{16}{0}{6}
+\beamer@sectionintoc {7}{Whirlpool: Near-Deduplication}{18}{0}{7}
+\beamer@sectionintoc {8}{Whirlpool: Distributed Crawling}{20}{0}{8}
+\beamer@sectionintoc {9}{Whirlpool: Operations}{22}{0}{9}
+\beamer@subsectionintoc {9}{1}{From 10,000 ft.}{23}{0}{9}
+\beamer@subsectionintoc {9}{2}{From 5,000 ft.}{24}{0}{9}
+\beamer@sectionintoc {10}{Future work}{25}{0}{10}
