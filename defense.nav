@@ -1,109 +1,114 @@
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
-\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
-\headcommand {\beamer@framepages {2}{2}}
-\headcommand {\beamer@sectionpages {1}{2}}
-\headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{Motiv. \& Contrib}{3}{Motivation \& Contribution}{0}}
-\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
-\headcommand {\beamer@framepages {3}{3}}
-\headcommand {\slideentry {1}{0}{2}{4/5}{}{0}}
-\headcommand {\beamer@framepages {4}{5}}
-\headcommand {\slideentry {1}{0}{3}{6/6}{}{0}}
-\headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@sectionpages {3}{6}}
-\headcommand {\beamer@subsectionpages {3}{6}}
-\headcommand {\sectionentry {2}{Crawler history}{7}{Crawler characteristics \& history}{0}}
-\headcommand {\slideentry {2}{0}{1}{7/7}{}{0}}
-\headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {2}{0}{2}{8/8}{}{0}}
-\headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {2}{0}{3}{9/9}{}{0}}
-\headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@sectionpages {7}{9}}
-\headcommand {\beamer@subsectionpages {7}{9}}
-\headcommand {\sectionentry {3}{Mercator}{10}{Mercator 1999 (Heydon \& Najork)}{0}}
-\headcommand {\slideentry {3}{0}{1}{10/10}{}{0}}
-\headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {3}{0}{2}{11/11}{}{0}}
-\headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {3}{0}{3}{12/12}{}{0}}
-\headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {3}{0}{4}{13/13}{}{0}}
+\headcommand {\slideentry {0}{0}{2}{2/12}{}{0}}
+\headcommand {\beamer@framepages {2}{12}}
+\headcommand {\beamer@sectionpages {1}{12}}
+\headcommand {\beamer@subsectionpages {1}{12}}
+\headcommand {\sectionentry {1}{Motiv. \& Contrib}{13}{Motivation \& Contribution}{0}}
+\headcommand {\slideentry {1}{0}{1}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {3}{0}{5}{14/14}{}{0}}
-\headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {3}{0}{6}{15/15}{}{0}}
-\headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@sectionpages {10}{15}}
-\headcommand {\beamer@subsectionpages {10}{15}}
-\headcommand {\sectionentry {4}{Soft. design}{16}{Software Design Principles}{0}}
-\headcommand {\slideentry {4}{0}{1}{16/16}{}{0}}
+\headcommand {\slideentry {1}{0}{2}{14/15}{}{0}}
+\headcommand {\beamer@framepages {14}{15}}
+\headcommand {\slideentry {1}{0}{3}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {4}{0}{2}{17/20}{}{0}}
-\headcommand {\beamer@framepages {17}{20}}
-\headcommand {\slideentry {4}{0}{3}{21/23}{}{0}}
-\headcommand {\beamer@framepages {21}{23}}
-\headcommand {\beamer@sectionpages {16}{23}}
-\headcommand {\beamer@subsectionpages {16}{23}}
-\headcommand {\sectionentry {5}{Event-driven}{24}{Whirlpool: Event-driven architecture}{0}}
-\headcommand {\slideentry {5}{0}{1}{24/24}{}{0}}
+\headcommand {\beamer@sectionpages {13}{16}}
+\headcommand {\beamer@subsectionpages {13}{16}}
+\headcommand {\sectionentry {2}{Crawler history}{17}{Crawler characteristics \& history}{0}}
+\headcommand {\slideentry {2}{0}{1}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {2}{0}{2}{18/18}{}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\slideentry {2}{0}{3}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\beamer@sectionpages {17}{19}}
+\headcommand {\beamer@subsectionpages {17}{19}}
+\headcommand {\sectionentry {3}{Mercator}{20}{Mercator 1999 (Heydon \& Najork)}{0}}
+\headcommand {\slideentry {3}{0}{1}{20/20}{}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {3}{0}{2}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {3}{0}{3}{22/22}{}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {3}{0}{4}{23/23}{}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {3}{0}{5}{24/24}{}{0}}
 \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {5}{0}{2}{25/29}{}{0}}
-\headcommand {\beamer@framepages {25}{29}}
-\headcommand {\slideentry {5}{0}{3}{30/34}{}{0}}
-\headcommand {\beamer@framepages {30}{34}}
-\headcommand {\slideentry {5}{0}{4}{35/35}{}{0}}
-\headcommand {\beamer@framepages {35}{35}}
-\headcommand {\slideentry {5}{0}{5}{36/36}{}{0}}
-\headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {5}{0}{6}{37/37}{}{0}}
-\headcommand {\beamer@framepages {37}{37}}
-\headcommand {\beamer@sectionpages {24}{37}}
-\headcommand {\beamer@subsectionpages {24}{37}}
-\headcommand {\sectionentry {6}{Parser}{38}{Whirlpool: Parser}{0}}
-\headcommand {\slideentry {6}{0}{1}{38/38}{}{0}}
-\headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {6}{0}{2}{39/39}{}{0}}
-\headcommand {\beamer@framepages {39}{39}}
-\headcommand {\beamer@sectionpages {38}{39}}
-\headcommand {\beamer@subsectionpages {38}{39}}
-\headcommand {\sectionentry {7}{Deduplication}{40}{Whirlpool: Near-Deduplication}{0}}
-\headcommand {\slideentry {7}{0}{1}{40/40}{}{0}}
-\headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {7}{0}{2}{41/41}{}{0}}
-\headcommand {\beamer@framepages {41}{41}}
-\headcommand {\beamer@sectionpages {40}{41}}
-\headcommand {\beamer@subsectionpages {40}{41}}
-\headcommand {\sectionentry {8}{Dist. Crawling}{42}{Whirlpool: Distributed Crawling}{0}}
-\headcommand {\slideentry {8}{0}{1}{42/42}{}{0}}
-\headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {8}{0}{2}{43/43}{}{0}}
-\headcommand {\beamer@framepages {43}{43}}
-\headcommand {\beamer@sectionpages {42}{43}}
-\headcommand {\beamer@subsectionpages {42}{43}}
-\headcommand {\sectionentry {9}{Opworks}{44}{Whirlpool: Operations}{0}}
-\headcommand {\slideentry {9}{0}{1}{44/44}{}{0}}
-\headcommand {\beamer@framepages {44}{44}}
-\headcommand {\beamer@subsectionpages {44}{44}}
-\headcommand {\beamer@subsectionentry {0}{9}{1}{45}{From 10,000 ft.}}
-\headcommand {\slideentry {9}{1}{1}{45/45}{From 10,000 ft.}{0}}
+\headcommand {\slideentry {3}{0}{6}{25/25}{}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\beamer@sectionpages {20}{25}}
+\headcommand {\beamer@subsectionpages {20}{25}}
+\headcommand {\sectionentry {4}{Soft. design}{26}{Software Design Principles}{0}}
+\headcommand {\slideentry {4}{0}{1}{26/26}{}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\slideentry {4}{0}{2}{27/30}{}{0}}
+\headcommand {\beamer@framepages {27}{30}}
+\headcommand {\slideentry {4}{0}{3}{31/33}{}{0}}
+\headcommand {\beamer@framepages {31}{33}}
+\headcommand {\beamer@sectionpages {26}{33}}
+\headcommand {\beamer@subsectionpages {26}{33}}
+\headcommand {\sectionentry {5}{Event-driven}{34}{Whirlpool: Event-driven architecture}{0}}
+\headcommand {\slideentry {5}{0}{1}{34/34}{}{0}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\slideentry {5}{0}{2}{35/39}{}{0}}
+\headcommand {\beamer@framepages {35}{39}}
+\headcommand {\slideentry {5}{0}{3}{40/44}{}{0}}
+\headcommand {\beamer@framepages {40}{44}}
+\headcommand {\slideentry {5}{0}{4}{45/45}{}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\beamer@subsectionpages {45}{45}}
-\headcommand {\beamer@subsectionentry {0}{9}{2}{46}{From 5,000 ft.}}
-\headcommand {\slideentry {9}{2}{1}{46/46}{From 5,000 ft.}{0}}
+\headcommand {\slideentry {5}{0}{5}{46/46}{}{0}}
 \headcommand {\beamer@framepages {46}{46}}
-\headcommand {\beamer@sectionpages {44}{46}}
-\headcommand {\beamer@subsectionpages {46}{46}}
-\headcommand {\sectionentry {10}{Future}{47}{Future work}{0}}
-\headcommand {\slideentry {10}{0}{1}{47/47}{}{0}}
+\headcommand {\slideentry {5}{0}{6}{47/47}{}{0}}
 \headcommand {\beamer@framepages {47}{47}}
-\headcommand {\slideentry {10}{0}{2}{48/48}{}{0}}
+\headcommand {\beamer@sectionpages {34}{47}}
+\headcommand {\beamer@subsectionpages {34}{47}}
+\headcommand {\sectionentry {6}{Parser}{48}{Whirlpool: Fetcher}{0}}
+\headcommand {\slideentry {6}{0}{1}{48/48}{}{0}}
 \headcommand {\beamer@framepages {48}{48}}
-\headcommand {\slideentry {10}{0}{3}{49/49}{}{0}}
+\headcommand {\beamer@sectionpages {48}{48}}
+\headcommand {\beamer@subsectionpages {48}{48}}
+\headcommand {\sectionentry {7}{Parser}{49}{Whirlpool: Parser}{0}}
+\headcommand {\slideentry {7}{0}{1}{49/49}{}{0}}
 \headcommand {\beamer@framepages {49}{49}}
-\headcommand {\beamer@partpages {1}{49}}
-\headcommand {\beamer@subsectionpages {47}{49}}
-\headcommand {\beamer@sectionpages {47}{49}}
-\headcommand {\beamer@documentpages {49}}
-\headcommand {\gdef \inserttotalframenumber {35}}
+\headcommand {\slideentry {7}{0}{2}{50/50}{}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\beamer@sectionpages {49}{50}}
+\headcommand {\beamer@subsectionpages {49}{50}}
+\headcommand {\sectionentry {8}{Deduplication}{51}{Whirlpool: Near-Deduplication}{0}}
+\headcommand {\slideentry {8}{0}{1}{51/51}{}{0}}
+\headcommand {\beamer@framepages {51}{51}}
+\headcommand {\slideentry {8}{0}{2}{52/52}{}{0}}
+\headcommand {\beamer@framepages {52}{52}}
+\headcommand {\beamer@sectionpages {51}{52}}
+\headcommand {\beamer@subsectionpages {51}{52}}
+\headcommand {\sectionentry {9}{Dist. Crawling}{53}{Whirlpool: Distributed Crawling}{0}}
+\headcommand {\slideentry {9}{0}{1}{53/53}{}{0}}
+\headcommand {\beamer@framepages {53}{53}}
+\headcommand {\slideentry {9}{0}{2}{54/54}{}{0}}
+\headcommand {\beamer@framepages {54}{54}}
+\headcommand {\beamer@sectionpages {53}{54}}
+\headcommand {\beamer@subsectionpages {53}{54}}
+\headcommand {\sectionentry {10}{Opworks}{55}{Whirlpool: Operations}{0}}
+\headcommand {\slideentry {10}{0}{1}{55/55}{}{0}}
+\headcommand {\beamer@framepages {55}{55}}
+\headcommand {\beamer@subsectionpages {55}{55}}
+\headcommand {\beamer@subsectionentry {0}{10}{1}{56}{From 10,000 ft.}}
+\headcommand {\slideentry {10}{1}{1}{56/56}{From 10,000 ft.}{0}}
+\headcommand {\beamer@framepages {56}{56}}
+\headcommand {\beamer@subsectionpages {56}{56}}
+\headcommand {\beamer@subsectionentry {0}{10}{2}{57}{From 5,000 ft.}}
+\headcommand {\slideentry {10}{2}{1}{57/57}{From 5,000 ft.}{0}}
+\headcommand {\beamer@framepages {57}{57}}
+\headcommand {\beamer@sectionpages {55}{57}}
+\headcommand {\beamer@subsectionpages {57}{57}}
+\headcommand {\sectionentry {11}{Future}{58}{Future work}{0}}
+\headcommand {\slideentry {11}{0}{1}{58/58}{}{0}}
+\headcommand {\beamer@framepages {58}{58}}
+\headcommand {\slideentry {11}{0}{2}{59/59}{}{0}}
+\headcommand {\beamer@framepages {59}{59}}
+\headcommand {\slideentry {11}{0}{3}{60/60}{}{0}}
+\headcommand {\beamer@framepages {60}{60}}
+\headcommand {\beamer@partpages {1}{60}}
+\headcommand {\beamer@subsectionpages {58}{60}}
+\headcommand {\beamer@sectionpages {58}{60}}
+\headcommand {\beamer@documentpages {60}}
+\headcommand {\gdef \inserttotalframenumber {36}}

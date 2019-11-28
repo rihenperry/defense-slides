@@ -4,6 +4,13 @@
 %\usefonttheme{professionalfonts}
 \usefonttheme{serif}
 \usepackage{fontspec}
+\usepackage{tikz}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+\usetikzlibrary{shapes,snakes}
 %\usefonttheme{structurebold}
 \usecolortheme{dove}
 \setmainfont{Georgia}
@@ -17,9 +24,6 @@
   }
 }
 
-\usepackage[utf8]{inputenc}
-\usepackage{tikz}
-\usetikzlibrary{shapes}
 
 \setbeamertemplate{section in head/foot}{%
     \if\insertsectionheadnumber1
@@ -52,7 +56,7 @@
 
 \titlegraphic{\includegraphics[width=.3\textwidth,height=.2\textheight]{../csuci-mscs-thesis-dist-web-crawler/media/correctlogo.jpg}~}
 \date{\today}
-
+\usepackage{picture}
 \begin{document}
 
 % real meat of the presentation
@@ -65,7 +69,25 @@
 % -------------------------------------
 \begin{frame}[plain]
   %\frametitle{Agenda}
-  \tableofcontents[hideallsubsections]
+  %\tableofcontents[hideallsubsections]
+  \begin{itemize}[<+->]
+  \item Motivation \& Contributions
+  \item Crawler characteristics \& history
+  \item Mercator 1999 (Heydon \& Najork)
+  \item Software Design Principles
+    \makebox(0,0){\put(40,5.3\normalbaselineskip){%
+               $\left.\rule{0pt}{2.3\normalbaselineskip}\right\}$ background}}
+  \item Whirlpool: Event driven architecture
+  \item Whirlpool: Fetcher
+  \item Whirlpool: Parser
+  \item Whirlpool: Deduplication
+  \item Whirlpool: Distributed Crawling
+  \item Whirlpool: Operations
+    \makebox(0,0){\put(57,10.5\normalbaselineskip){%
+               $\left.\rule{0pt}{4.1\normalbaselineskip}\right\}$ implementation \& results}}
+  \item Future work
+  \end{itemize}
+  
 \end{frame}
 
 \section[Motiv. \& Contrib]{Motivation \& Contribution}
@@ -106,7 +128,34 @@
 % -------------------------------------
 
 \begin{frame}{Web crawlers (1990 - 2019)}
-  to add something
+  \begin{figure}
+    %\caption{Web crawlers timeline}
+    \centering
+    \resizebox{\linewidth}{!}{% Resize table to fit within
+
+      \begin{tikzpicture}[]
+        % draw horizontal line
+        \draw (0,0) -- (36/1.7,0);
+        % draw vertical lines
+        %\foreach \x in {0, 8, 15, 22, 29, 36, 41}{
+        \foreach \x in {0, 4, 8, 12, 16, 20, 24, 28, 32, 36}{
+          \draw (\x/1.8,4pt) -- (\x/1.8,-4pt);
+        }
+        % draw nodes
+        \draw (0,0) node[below=3pt] { Wanderer } node[above=3pt] { 1993  };
+        \draw (4/1.8,0) node[below=3pt] { MOMSpider } node[above=3pt] { 1994 };
+        \draw (8/1.8,0) node[below=3pt] { Internet Archive } node[above=3pt] { 1996 };
+        \draw (12/1.8,0) node[below=3pt] { Mercator } node[above=3pt] { 1999 };
+        \draw (16/1.8,0) node[below=3pt] { Polybot } node[above=3pt] { 2000 };
+        \draw (20/1.8,0) node[below=3pt] { IBM Webfountain } node[above=3pt] { 2001 };
+        \draw (24/1.8,0) node[below=3pt] { Ubicrawler } node[above=3pt] { 2004 };
+        \draw (28/1.8,0) node[below=3pt] { Multicrawler } node[above=3pt] { 2006 };
+        \draw (32/1.8,0) node[below=3pt] { IRLbot } node[above=3pt] { 2009 };
+        \draw (36/1.8,0) node[below=3pt] { Software Heritage } node[above=3pt] { 2016 };
+      \end{tikzpicture}
+    }
+    \label{fig:time_line}
+  \end{figure}
 \end{frame}
 
 % -------------------------------------
@@ -119,7 +168,23 @@
 % -------------------------------------
 
 \begin{frame}{basic crawling algorithm}
-  to add content
+  \begin{algorithm}[H]
+    \begin{algorithmic}[1]
+      \State $\text{Let I} \gets \text{\{1,2,3,4,5\}} \text{ such that seed set S = \{} U_i \text{| i } \in \text{I\}}$
+      \State $U_f \gets \text{S; where } U_f \text{ is a Frontier queue}$
+      \Procedure{Spider}{$U_f$}
+      \While {$U_f \neq \emptyset$}
+      \State $u \gets \text{Pop}(U_f)$ 
+      \State $p \gets \text{Fetch}(u)$
+      \State $T \gets \exists p\text{ [\{Extract}(p, t) \text{ | } t \text{ is a text \}]}$
+      \State $L \gets \exists p\text{ [\{Extract}(p, l) \text{ | } l \text{ is a link \}]}$
+      \State $U_f \gets U_f \cup L$
+      \State $\exists u\text{ [\{Delete}(U_f, u) \text{ | } u \text{ is a already fetched URL\}]}$
+      \EndWhile
+      \EndProcedure
+      \State \textbf{end}
+    \end{algorithmic}
+  \end{algorithm}
 \end{frame}
 
 % -------------------------------------
@@ -266,6 +331,13 @@
 
 \begin{frame}{development vs. production docker containers}
   things to add 
+\end{frame}
+
+% -------------------------------------
+
+\section[Parser]{Whirlpool: Fetcher}
+\begin{frame}[plain]
+  \centering{Whirlpool: Fetcher}
 \end{frame}
 
 % -------------------------------------
