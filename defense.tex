@@ -4,6 +4,7 @@
 %\usefonttheme{professionalfonts}
 \usefonttheme{serif}
 \usepackage{fontspec}
+\usepackage{media9}
 \usepackage{tikz}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
@@ -18,7 +19,7 @@
 \setbeamertemplate{headline}{%
 \leavevmode%
   \hbox{%
-    \begin{beamercolorbox}[wd=\paperwidth,ht=5.8ex,dp=2.125ex]{palette}%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=5.8ex,dp=1.125ex]{palette}%
         \insertsectionnavigationhorizontal{\paperwidth}{}{\hskip0pt plus1filll}
     \end{beamercolorbox}%
   }
@@ -123,6 +124,23 @@
 \begin{frame}{Coverage \& Freshness}
   \centering
   \includegraphics[width=10cm, height=6cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/crawl-ordering.png}
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{Seedlist}
+  \begin{columns}[t]
+    \column{.5\textwidth}
+    \centering
+    \includegraphics[width=2.5cm,height=2cm]{img/monster.png}\\
+    \includegraphics[width=2.5cm,height=2cm]{img/dice.jpg}\\
+    \includegraphics[width=2.5cm,height=2cm]{img/ziprecruiter.png}
+    \column{.5\textwidth}
+    \centering
+    \includegraphics[width=2.5cm,height=2cm]{img/glassdoor.jpg}\\
+    \includegraphics[width=2.5cm,height=2cm]{img/indeed.png}\\
+    \includegraphics[width=2.5cm,height=2cm]{img/simplyhired.jpg}
+  \end{columns}
 \end{frame}
 
 % -------------------------------------
@@ -277,6 +295,20 @@
 
 % -------------------------------------
 
+\begin{frame}{Message buses}
+  \begin{columns}[t]
+    \column{.5\textwidth}
+    \centering
+    \includegraphics[width=4cm,height=2cm]{img/rmq.png}\\
+    \vrule{}
+    \column{.5\textwidth}
+    \centering
+    \includegraphics[width=4cm,height=2cm]{img/kafka.png}\\
+  \end{columns}
+\end{frame}
+
+% -------------------------------------
+
 \begin{frame}{Message Queue(MQ)}
   \begin{columns}
     \column{0.7\textwidth}
@@ -330,14 +362,59 @@
 % -------------------------------------
 
 \begin{frame}{development vs. production docker containers}
-  things to add 
+  \only<1>{
+    \centering{
+      \begin{figure}
+        \includegraphics[width=6.5cm,height=7.5cm]{img/dockerdev.png}
+      \end{figure}
+    }
+  }\only<2>{
+    \centering{
+      \begin{figure}
+        \includegraphics[width=6.5cm,height=7.5cm]{img/dockerfile.png}
+      \end{figure}
+    }
+  }
+  %\only<3>{
+  %  \centering{
+  %    \begin{figure}
+  %      
+  %    \end{figure}
+  %  }
+  %}
 \end{frame}
 
 % -------------------------------------
 
-\section[Parser]{Whirlpool: Fetcher}
+\begin{frame}{development vs. production docker containers}
+  \centering
+  \includemedia[
+  width=6.5cm,
+  height=7.5cm,
+  activate=pageopen,
+  addresource=img/dockercompose.mp4,
+  flashvars={
+    %important: same path as in `addresource'
+    source=img/dockercompose.mp4
+    &autoPlay=true
+    &loop=true
+    &scaleMode=letterbox
+  }
+]{}{VPlayer.swf}
+\end{frame}
+
+% -------------------------------------
+
+\section[Fetcher]{Whirlpool: Fetcher}
 \begin{frame}[plain]
   \centering{Whirlpool: Fetcher}
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{Whirlpool: Fetcher}
+  \centering
+  \includegraphics[width=12cm, height=7cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/dns_response_time.png}
 \end{frame}
 
 % -------------------------------------
@@ -350,38 +427,105 @@
 % -------------------------------------
 
 \begin{frame}{Parser}
-  to add something
+  \centering
+  \includegraphics[width=10cm, height=6cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/docparsers.png}
 \end{frame}
 
 % -------------------------------------
 
-\section[Deduplication]{Whirlpool: Near-Deduplication}
+\section[Dedupe]{Whirlpool: Deduplication}
 \begin{frame}[plain]
-  \centering{Whirlpool: Near-Deduplication}
+  \centering{Whirlpool: Deduplication}
 \end{frame}
 
 % -------------------------------------
 
-\begin{frame}{Dedupe}
+\begin{frame}{Deduplication}
   to add something
 \end{frame}
 
 % -------------------------------------
 
-\section[Dist. Crawling]{Whirlpool: Distributed Crawling}
+\section[Dist. Crawl]{Whirlpool: Distributed Crawling}
 \begin{frame}[plain]
   \centering{Whirlpool: Distributed Crawling}
 \end{frame}
 
 % -------------------------------------
 
-\begin{frame}{Dist. crawl}
-  to add something
+\begin{frame}{Host splitting in Mercator}
+  \begin{figure}
+    \centering 
+    \includegraphics[width=10cm, height=5cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/host-splitterv3.png}
+  \end{figure}
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=6cm,height=1cm]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/requestboundaries.png}
+  \end{figure}
 \end{frame}
 
 % -------------------------------------
 
-\section[Opworks]{Whirlpool: Operations}
+\begin{frame}{Rebalancing: mod N}
+  \only<1>{
+    \centering {
+      \begin{figure}
+      \includegraphics[width=8cm,height=3cm]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/modnsplit.png}
+      \end{figure}
+    }
+  }\only<2>{
+    \centering {
+      \begin{figure}
+        \includegraphics[width=10cm,height=3cm]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/modn_info.png}
+      \end{figure}
+    }
+  }
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{Rebalancing: virtual nodes}
+  \only<1>{
+    \centering {
+      \begin{figure}
+      \includegraphics[width=8cm,height=3cm]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/vnodesplit1.png}
+      \end{figure}
+    }
+  }\only<2>{
+    \centering {
+      \begin{figure}
+     \includegraphics[width=8cm,height=3cm]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/vnodesplit2.png}
+      \end{figure}
+    }
+  }\only<3>{
+    \centering {
+      \begin{figure}
+     \includegraphics[width=8cm,height=2cm]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/addingnode.png}
+      \end{figure}
+    }
+  }
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{Zookeeper}
+  \begin{columns}[t]
+    \column{.5\textwidth}
+    \begin{figure}
+     \centering \includegraphics[width=5cm,height=2cm]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/zookeeper.png}
+   \end{figure}
+   \column{.5\textwidth}
+   \begin{figure}
+     \centering
+     \includegraphics[width=5cm,height=2.5cm]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/zookeeper_info.png}
+   \end{figure}
+ \end{columns}
+\end{frame}
+
+% -------------------------------------
+
+\section[opswork]{Whirlpool: Operations}
 \begin{frame}[plain]
   \centering{Whirlpool: Operations}
 \end{frame}
@@ -400,6 +544,25 @@
 \begin{frame}{From 5,000 ft.}
   \centering
   \includegraphics[width=10cm, height=8cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/aws-deploy-5k-feet.png}
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{Infrastructure as a code}
+  \centering
+  \includemedia[
+  width=6.5cm,
+  height=7.5cm,
+  activate=pageopen,
+  addresource=img/cf.mp4,
+  flashvars={
+    %important: same path as in `addresource'
+    source=img/cf.mp4
+    &autoPlay=true
+    &loop=true
+    &scaleMode=letterbox
+  }
+]{}{VPlayer.swf}
 \end{frame}
 
 % -------------------------------------
