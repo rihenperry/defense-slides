@@ -3,3 +3,5 @@ auto
 *.snm
 *.out
 verbal_notes.md
+*.aux
+*.nav
