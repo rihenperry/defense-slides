@@ -71,12 +71,11 @@
 \begin{frame}[plain]
   %\frametitle{Agenda}
   %\tableofcontents[hideallsubsections]
-  \begin{itemize}[<+->]
+  \begin{itemize}
   \item Motivation \& Contributions
   \item Crawler characteristics \& history
   \item Mercator 1999 (Heydon \& Najork)
-  \item Software Design Principles
-    \makebox(0,0){\put(40,5.3\normalbaselineskip){%
+    \makebox(0,0){\put(15,5.3\normalbaselineskip){%
                $\left.\rule{0pt}{2.3\normalbaselineskip}\right\}$ background}}
   \item Whirlpool: Event driven architecture
   \item Whirlpool: Fetcher
@@ -248,59 +247,16 @@
 
 % -------------------------------------
 
-\section[Soft. design]{Software Design Principles}
-\begin{frame}[plain]
-  \centering{Software Design Principles}
-\end{frame}
-
-% -------------------------------------
-
-\begin{frame}{Designing scalable systems}
-  \begin{itemize}
-    \pause
-  \item Adding identical copies of components
-    \pause
-  \item Functional partitioning
-    \begin{figure}
-      \centering{\includegraphics[width=70mm, height=40mm, scale=0.1]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/netflix.png}}
-    \end{figure}
-    \pause
-  \item Data partitioning
-  \end{itemize}
-\end{frame}
-
-% -------------------------------------
-
-\begin{frame}{State Management}
-  \only<1>{
-    \centering{
-      \begin{figure}
-        \includegraphics[width=5cm, height=3cm, scale=1.3]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/multi-cache-wrng.png}
-        \caption{identical copies of same cached object}
-      \end{figure}
-    }
-  }\only<2>{
-    \centering{
-      \begin{figure}
-        \includegraphics[width=6cm, height=2cm, scale=0.1]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/wrng-local-locks.png}
-        \caption{Using local locks to access shared resources}
-      \end{figure}
-    }
-  }\only<3>{
-    \centering{
-      \begin{figure}
-        \includegraphics[width=6cm, height=2cm, scale=0.1]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/rght-shared-locks.png}
-        \caption{using shared locks to access shared resources}
-      \end{figure}
-    }
-  }
-\end{frame}
-
-% -------------------------------------
-
 \section[Event-driven]{Whirlpool: Event-driven architecture}
 \begin{frame}[plain]
   \centering{Whirlpool: Event-driven architecture}
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{Message Queue(MQ)}
+  \centering
+  \includegraphics[width=8cm, height=6cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/mq_basic.png}
 \end{frame}
 
 % -------------------------------------
@@ -319,37 +275,12 @@
 
 % -------------------------------------
 
-\begin{frame}{Message Queue(MQ)}
-  \begin{columns}
-    \column{0.7\textwidth}
-    \centering{
-      \includegraphics[width=8cm, height=6cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/mq_basic.png}
-    }
-    \column{0.4\textwidth}
-    \begin{itemize}
-      \pause
-    \item decoupling
-      \pause
-    \item scaled independently
-      \pause
-     \item balancing traffic
-       \pause
-     \item fault-tolerance
-    \end{itemize}
-  \end{columns}
-  
-\end{frame}
-
-% -------------------------------------
-
 \begin{frame}{MQ: Routing mechanisms}
   \begin{itemize}
     \pause
   \item Direct Worker Queue Data Flow
     \pause
-  \item Fanout
-    \pause
-  \item Topic
+  \item publish/subscribe
     \pause
   \item Header
   \end{itemize}
@@ -360,75 +291,6 @@
 \begin{frame}{Direct Worker Queue Data Flow}
   \centering
   \includegraphics[width=7cm, height=8cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/rmq-broker.png}
-\end{frame}
-
-% -------------------------------------
-
-\begin{frame}{RabbitMQ: Message bus}
-  \centering
-  \includegraphics[width=10cm, height=6cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/multi-container-deploy.png}
-\end{frame}
-
-% -------------------------------------
-
-\begin{frame}{Language runtime}
-  %\begin{columns}[t]
-    %\column{.2\textwidth}
-  \begin{figure}
-    \centering
-    \includegraphics[width=2.5cm,height=2cm]{img/javalogo.jpg}
-    \includegraphics[width=2.5cm,height=2cm]{img/pylogo1.png}\\
-    \includegraphics[width=2.5cm,height=2cm]{img/jslogo.png}
-    \includegraphics[width=2.5cm,height=2cm]{img/javalogo.jpg}
-  \end{figure}
-    %\column{.2\textwidth}
-    %\centering
-  %\end{columns}
-  \centering
-\end{frame}
-
-% -------------------------------------
-
-\begin{frame}{development vs. production docker containers}
-  \only<1>{
-    \centering{
-      \begin{figure}
-        \includegraphics[width=6.5cm,height=7.5cm]{img/dockerdev.png}
-      \end{figure}
-    }
-  }\only<2>{
-    \centering{
-      \begin{figure}
-        \includegraphics[width=6.5cm,height=7.5cm]{img/dockerfile.png}
-      \end{figure}
-    }
-  }
-  %\only<3>{
-  %  \centering{
-  %    \begin{figure}
-  %      
-  %    \end{figure}
-  %  }
-  %}
-\end{frame}
-
-% -------------------------------------
-
-\begin{frame}{development vs. production docker containers}
-  \centering
-  \includemedia[
-  width=6.5cm,
-  height=7.5cm,
-  activate=pageopen,
-  addresource=img/dockercompose.mp4,
-  flashvars={
-    %important: same path as in `addresource'
-    source=img/dockercompose.mp4
-    &autoPlay=true
-    &loop=true
-    &scaleMode=letterbox
-  }
-]{}{VPlayer.swf}
 \end{frame}
 
 % -------------------------------------
@@ -587,6 +449,49 @@
 
 % -------------------------------------
 
+\begin{frame}{Designing scalable systems}
+  \begin{itemize}
+    \pause
+  \item Adding identical copies of components
+    \pause
+  \item Functional partitioning
+    \begin{figure}
+      \centering{\includegraphics[width=70mm, height=40mm, scale=0.1]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/netflix.png}}
+    \end{figure}
+    \pause
+  \item Data partitioning
+  \end{itemize}
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{State Management}
+  \only<1>{
+    \centering{
+      \begin{figure}
+        \includegraphics[width=5cm, height=3cm, scale=1.3]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/multi-cache-wrng.png}
+        \caption{identical copies of same cached object}
+      \end{figure}
+    }
+  }\only<2>{
+    \centering{
+      \begin{figure}
+        \includegraphics[width=6cm, height=2cm, scale=0.1]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/wrng-local-locks.png}
+        \caption{Using local locks to access shared resources}
+      \end{figure}
+    }
+  }\only<3>{
+    \centering{
+      \begin{figure}
+        \includegraphics[width=6cm, height=2cm, scale=0.1]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/rght-shared-locks.png}
+        \caption{using shared locks to access shared resources}
+      \end{figure}
+    }
+  }
+\end{frame}
+
+% -------------------------------------
+
 \begin{frame}{Host splitting in Mercator}
   \begin{figure}
     \centering 
@@ -666,6 +571,75 @@
 
 % -------------------------------------
 
+\begin{frame}{RabbitMQ: Message bus}
+  \centering
+  \includegraphics[width=10cm, height=6cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/multi-container-deploy.png}
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{Language runtime}
+  %\begin{columns}[t]
+    %\column{.2\textwidth}
+  \begin{figure}
+    \centering
+    \includegraphics[width=2.5cm,height=2cm]{img/javalogo.jpg}
+    \includegraphics[width=2.5cm,height=2cm]{img/pylogo1.png}\\
+    \includegraphics[width=2.5cm,height=2cm]{img/jslogo.png}
+    \includegraphics[width=2.5cm,height=2cm]{img/javalogo.jpg}
+  \end{figure}
+    %\column{.2\textwidth}
+    %\centering
+  %\end{columns}
+  \centering
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{development vs. production docker containers}
+  \only<1>{
+    \centering{
+      \begin{figure}
+        \includegraphics[width=6.5cm,height=7.5cm]{img/dockerdev.png}
+      \end{figure}
+    }
+  }\only<2>{
+    \centering{
+      \begin{figure}
+        \includegraphics[width=6.5cm,height=7.5cm]{img/dockerfile.png}
+      \end{figure}
+    }
+  }
+  %\only<3>{
+  %  \centering{
+  %    \begin{figure}
+  %      
+  %    \end{figure}
+  %  }
+  %}
+\end{frame}
+
+% -------------------------------------
+
+\begin{frame}{development vs. production docker containers}
+  \centering
+  \includemedia[
+  width=6.5cm,
+  height=7.5cm,
+  activate=pageopen,
+  addresource=img/dockercompose.mp4,
+  flashvars={
+    %important: same path as in `addresource'
+    source=img/dockercompose.mp4
+    &autoPlay=true
+    &loop=true
+    &scaleMode=letterbox
+  }
+]{}{VPlayer.swf}
+\end{frame}
+
+% -------------------------------------
+
 \subsection{From 10,000 ft.}
 \begin{frame}{From 10,000 ft.}
  \centering
@@ -676,9 +650,18 @@
 
 \subsection{From 5,000 ft.}
 \begin{frame}{From 5,000 ft.}
-  \centering
-  \includegraphics[width=10cm, height=8cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/aws-deploy-5k-feet.png}
+  \only<1>{
+    \centering {
+      \includegraphics[width=10cm, height=8cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/aws-deploy-5k-feet.png}
+    }
+  }\only<2>{
+    \centering {
+      \includegraphics[width=8cm, height=12cm, keepaspectratio]{../csuci-mscs-thesis-dist-web-crawler/media/crawler/iam_and_roles.png}
+    }
+  }
 \end{frame}
+
+
 
 % -------------------------------------
 
@@ -690,13 +673,13 @@
   activate=pageopen,
   addresource=img/cf.mp4,
   flashvars={
-    %important: same path as in `addresource'
+    % important: same path as in `addresource'
     source=img/cf.mp4
     &autoPlay=true
     &loop=true
     &scaleMode=letterbox
   }
-]{}{VPlayer.swf}
+  ]{}{VPlayer.swf}
 \end{frame}
 
 % -------------------------------------
@@ -704,10 +687,9 @@
 \begin{frame}{Recap}
   \begin{itemize}
   \item Microservices
-  \item Load balancing
   \item Decoupling
   \item Extensible
-  \item Distributed Systems(Partitioning)
+  \item Distributed Systems(load balancing)
   \item Logging \& metrics calculation
   \item Fault tolerance
   \item Resiliency

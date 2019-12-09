@@ -1,13 +1,12 @@
-\beamer@sectionintoc {1}{Motivation \& Contribution}{13}{0}{1}
-\beamer@sectionintoc {2}{Crawler characteristics \& history}{17}{0}{2}
-\beamer@sectionintoc {3}{Mercator 1999 (Heydon \& Najork)}{21}{0}{3}
-\beamer@sectionintoc {4}{Software Design Principles}{28}{0}{4}
-\beamer@sectionintoc {5}{Whirlpool: Event-driven architecture}{36}{0}{5}
-\beamer@sectionintoc {6}{Whirlpool: Fetcher}{54}{0}{6}
-\beamer@sectionintoc {7}{Whirlpool: Parser}{56}{0}{7}
-\beamer@sectionintoc {8}{Whirlpool: Deduplication}{58}{0}{8}
-\beamer@sectionintoc {9}{Whirlpool: Distributed Crawling}{75}{0}{9}
-\beamer@sectionintoc {10}{Whirlpool: Operations}{83}{0}{10}
-\beamer@subsectionintoc {10}{1}{From 10,000 ft.}{84}{0}{10}
-\beamer@subsectionintoc {10}{2}{From 5,000 ft.}{85}{0}{10}
-\beamer@sectionintoc {11}{Future work}{88}{0}{11}
+\beamer@sectionintoc {1}{Motivation \& Contribution}{3}{0}{1}
+\beamer@sectionintoc {2}{Crawler characteristics \& history}{7}{0}{2}
+\beamer@sectionintoc {3}{Mercator 1999 (Heydon \& Najork)}{11}{0}{3}
+\beamer@sectionintoc {4}{Whirlpool: Event-driven architecture}{18}{0}{4}
+\beamer@sectionintoc {5}{Whirlpool: Fetcher}{26}{0}{5}
+\beamer@sectionintoc {6}{Whirlpool: Parser}{28}{0}{6}
+\beamer@sectionintoc {7}{Whirlpool: Deduplication}{30}{0}{7}
+\beamer@sectionintoc {8}{Whirlpool: Distributed Crawling}{47}{0}{8}
+\beamer@sectionintoc {9}{Whirlpool: Operations}{62}{0}{9}
+\beamer@subsectionintoc {9}{1}{From 10,000 ft.}{68}{0}{9}
+\beamer@subsectionintoc {9}{2}{From 5,000 ft.}{69}{0}{9}
+\beamer@sectionintoc {10}{Future work}{73}{0}{10}
